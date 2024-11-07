@@ -1,0 +1,65 @@
+/* InspirationSlider.css */
+
+.swiper {
+    width: 100%;
+  }
+  
+  .slide-content {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .slide-content img {
+    width: 100%;
+    transition: height 0.3s ease;
+  }
+  
+  .active-slide img {
+    height: 100%;
+  }
+  
+  .inactive-slide img {
+    height: 80%; /* ارتفاع کمتر برای اسلایدهای غیرفعال */
+  }
+  
+  .slide-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .active-slide .slide-overlay {
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #D4A356;
+  }
+  
+  /* InspirationSlider.css */
+.slider-image {
+    width: 80%; /* عرض دلخواه برای تنظیم اندازه تصویر */
+    max-height: 400px; /* حداکثر ارتفاع تصویر */
+    object-fit: cover; /* حفظ تناسب تصویر بدون برش */
+    margin: 0 auto; /* مرکز کردن تصویر */
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px; /* ارتفاع دلخواه برای محدود کردن اسلایدر */
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  
